@@ -1,0 +1,7 @@
+allprojects {
+    group 'ai.hyacinth.framework'
+    description "Core Service Framework Mini Example"
+    version = '0.1.0'
+}
+
+apply from: './build-script.gradle'
