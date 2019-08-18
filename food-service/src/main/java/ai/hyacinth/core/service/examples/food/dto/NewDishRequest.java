@@ -9,8 +9,7 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 public class NewDishRequest {
-  @NotNull
-  private String title;
+  @NotNull private String title;
 
   @Min(0)
   @Max((3))

@@ -37,7 +37,6 @@ public class DishController {
     return foodService.findAllDish();
   }
 
-
   @PostMapping("/dish")
   public DishInfo addNewDish(@RequestBody @Valid NewDishRequest newDishRequest) {
     return foodService.addDish(newDishRequest);
