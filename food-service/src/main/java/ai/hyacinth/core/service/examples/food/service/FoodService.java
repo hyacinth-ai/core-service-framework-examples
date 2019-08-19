@@ -2,11 +2,11 @@ package ai.hyacinth.core.service.examples.food.service;
 
 import ai.hyacinth.core.service.examples.food.dto.DishInfo;
 import ai.hyacinth.core.service.examples.food.dto.NewDishRequest;
-import ai.hyacinth.core.service.examples.food.dto.SetDishPointRequest;
+import ai.hyacinth.core.service.examples.food.dto.DishUpdateRequest;
 import java.util.List;
 
 public interface FoodService {
-  DishInfo setDishPoint(Long dishId, SetDishPointRequest request);
+  DishInfo updateDish(Long dishId, DishUpdateRequest request);
 
   List<DishInfo> findAllDish();
 
