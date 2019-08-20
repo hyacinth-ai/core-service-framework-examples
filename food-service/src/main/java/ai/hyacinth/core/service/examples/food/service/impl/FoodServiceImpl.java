@@ -12,6 +12,7 @@ import java.util.stream.Collectors;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
+import org.springframework.util.StringUtils;
 
 @Service
 public class FoodServiceImpl implements FoodService {
@@ -51,11 +52,15 @@ public class FoodServiceImpl implements FoodService {
   public DishInfo addDish(NewDishRequest newDishRequest) {
     Dish dish = new Dish();
     dish.setTitle(newDishRequest.getTitle());
-    dish.setPoint(newDishRequest.getPoint() == null ? 0 : newDishRequest.getPoint());
+    dish.setPoint(nullDefault(newDishRequest.getPoint(), 0));
     dish.setCategory(null);
-    dish.setIngredient("");
+    dish.setIngredient(nullDefault(newDishRequest.getIngredient(), ""));
     dishRepo.save(dish);
     return toDishInfo(dish);
+  }
+
+  private <T> T nullDefault(T input, T defaultValue) {
+    return input == null ? defaultValue : input;
   }
 
   private DishInfo toDishInfo(Dish dish) {

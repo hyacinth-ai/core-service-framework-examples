@@ -14,4 +14,6 @@ public class NewDishRequest {
   @Min(0)
   @Max((3))
   private Integer point;
+
+  private String ingredient;
 }
