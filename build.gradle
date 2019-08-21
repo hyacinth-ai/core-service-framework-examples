@@ -1,6 +1,6 @@
 allprojects {
     group 'ai.hyacinth.framework'
-    description "Core Service Framework Mini Example"
+    description "Core Service Framework Examples"
     version = '1.0.0'
 }
 

@@ -2,8 +2,8 @@ package ai.hyacinth.core.service.examples.food.service.impl;
 
 import ai.hyacinth.core.service.examples.food.domain.Dish;
 import ai.hyacinth.core.service.examples.food.dto.DishInfo;
-import ai.hyacinth.core.service.examples.food.dto.NewDishRequest;
 import ai.hyacinth.core.service.examples.food.dto.DishUpdateRequest;
+import ai.hyacinth.core.service.examples.food.dto.NewDishRequest;
 import ai.hyacinth.core.service.examples.food.repo.DishRepo;
 import ai.hyacinth.core.service.examples.food.service.FoodService;
 import ai.hyacinth.core.service.web.common.ServiceApiException;
@@ -12,7 +12,6 @@ import java.util.stream.Collectors;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-import org.springframework.util.StringUtils;
 
 @Service
 public class FoodServiceImpl implements FoodService {

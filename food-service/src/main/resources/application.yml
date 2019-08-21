@@ -11,16 +11,16 @@ spring:
 
   datasource:
     url: jdbc:h2:./data/test
-#    url: jdbc:mysql://192.168.99.100:3306/alicedb?characterEncoding=UTF-8&useSSL=false
-#    username: alice
-#    password: alice-secret
+  #    url: jdbc:mysql://192.168.99.100:3306/alicedb?characterEncoding=UTF-8&useSSL=false
+  #    username: alice
+  #    password: alice-secret
 
   jpa:
     hibernate:
       ddl-auto: update
     properties:
-#      hibernate:
-#        dialect: ai.hyacinth.core.service.jpa.hibernate.dialect.MySQLDialect
+      #      hibernate:
+      #        dialect: ai.hyacinth.core.service.jpa.hibernate.dialect.MySQLDialect
       javax:
         persistence:
           schema-generation:

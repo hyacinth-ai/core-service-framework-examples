@@ -13,14 +13,4 @@ public enum FoodServiceErrorCode implements ServiceApiErrorCode {
 
   private HttpStatus httpStatus;
   private String code;
-
-  @Override
-  public int getHttpStatusCode() {
-    return httpStatus.value();
-  }
-
-  @Override
-  public String getCode() {
-    return code;
-  }
 }
