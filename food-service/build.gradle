@@ -1,4 +1,4 @@
 dependencies {
-    compile 'ai.hyacinth.framework:core-service-endpoint-support:0.5.1'
-    compile 'ai.hyacinth.framework:core-service-jpa-support:0.5.1'
+    compile 'ai.hyacinth.framework:core-service-endpoint-support:0.5.2'
+    compile 'ai.hyacinth.framework:core-service-jpa-support:0.5.2'
 }
